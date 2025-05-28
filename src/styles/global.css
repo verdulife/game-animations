@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Clash Display Variable";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/clashdisplay-medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display Variable";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/clashdisplay-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@theme {
+  --color-knc-red: #e5311f;
+  --color-knc-blue: #102133;
+  --color-knc-dark: #060d14;
+
+  --font-sans: "Clash Display Variable", sans-serif;
+}
+
+.shapped {
+  clip-path: polygon(
+    1em 0%,
+    calc(100% - 1em) 0%,
+    100% 50%,
+    calc(100% - 1em) 100%,
+    1em 100%,
+    0% 50%
+  );
+}
